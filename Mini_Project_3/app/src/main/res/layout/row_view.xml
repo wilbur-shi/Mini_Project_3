@@ -1,0 +1,59 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Model:"
+            android:id="@+id/modelTextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:text="Year"
+            android:id="@+id/descriptionTextView"
+            android:layout_toRightOf="@id/modelTextView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/carImgView"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Used Car"
+            android:id="@+id/isUsedCheckBox"
+            android:layout_below="@+id/modelTextView"
+            android:layout_alignLeft="@+id/modelTextView"
+            android:layout_alignStart="@+id/modelTextView"
+            android:checked="false"
+            android:textColor="@android:color/black"
+            android:buttonTint="@android:color/black"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
